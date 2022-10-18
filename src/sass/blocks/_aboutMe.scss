@@ -1,0 +1,66 @@
+.aboutMe {
+    padding: 120px 0 120px 0;
+    .grid-cont {
+        display: grid;
+        grid-template: 247px 281px / 470px 634px;
+        grid-auto-rows: minmax(100px, auto);
+        grid-auto-columns: minmax(300px, auto);
+        &__sbtitle {
+            position: relative;
+            z-index: 2;
+            padding-left: 10px;
+            @include before_circle;
+        }
+        &__line {
+            width: 60px;
+            border: 1px solid $main-color;
+            margin-top: 4px;
+        } 
+        &__text {
+            width: 570px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            color: #000;
+            margin-top: 20px;
+        }
+        .grid-elem {
+            img {
+                width: 100%;
+            }
+        } 
+        .grid-elem1 {
+            padding-right: 70px;
+        }
+        .grid-elem4 {
+            display: grid;
+            grid-template: repeat(2, minmax(100px, auto)) / 274px 324px;
+            grid-auto-rows: minmax(100px, auto);
+            grid-auto-columns: minmax(300px, auto);
+            &__item {
+                display: flex;
+                .divImg {
+                    width: 36px;
+                    height: 36px;
+                    background-color: $main-color;
+                    border-radius: 50%;
+                    margin-right: 24px;
+                    padding: 15px 0 0 15px;
+                }
+            }
+            &__descr {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+                color: #000000;
+                margin-top: 5px;
+                width: 200px;
+            }
+        }
+    }
+    #imgAboutMe {
+        grid-row: 1 / 3;
+    }
+}
