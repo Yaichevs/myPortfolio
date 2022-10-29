@@ -1,0 +1,86 @@
+.subjects {
+    padding-top: 120px;
+    &__title {
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        @include before_circle;
+        &:before {
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__wrapp {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(2, minmax(270px, auto));
+        grid-auto-rows: minmax(270px, auto);
+        column-gap: 13px;
+        row-gap: 13px;
+    }
+    &__item {
+        border: 1px solid #000000;
+        padding: 30px 30px 25px 30px;
+        &-title {
+            margin-top: 20px;
+        }
+    }
+    &__descr {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: #000000;
+        margin-top: 15px;
+    }
+    &__wrapp2 {
+        padding-top: 120px;
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: repeat(2, minmax(70px, auto));
+        grid-auto-rows: minmax(70px, auto);
+        column-gap: 45px;
+        row-gap: 30px;
+    }
+    &__skillElem {
+        &-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &-title {
+            font-style: normal;
+            font-weight: 700;
+            line-height: 21px;
+            color: #000000;
+        }
+        &-pir {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            color: #000000;
+        }
+    }
+    &__scaleline {
+        width: 350px;
+        height: 14px;
+        background: #E8E4DE;
+        border-radius: 4px;
+        margin-top: 20px;
+        position: relative;
+    }
+    &__scaleNow {
+        height: 14px;
+        background-color: $main-color;
+        border-radius: 4px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
