@@ -1,0 +1,45 @@
+.myProjects {
+    padding-top: 120px;
+    &__title {
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        @include before_circle;
+        &:before {
+            top: -7px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__portfolio {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, minmax(280px, auto));
+        grid-auto-rows: 280px;
+        row-gap: 5px;
+        column-gap: 5px;
+    }
+    #snake {
+        grid-column: 4 / 5;
+        grid-row: 1 / 3;
+    }
+    #mac {
+        grid-row: 2 / 3;
+        grid-column: 2 / 4;
+    }
+    &__item {
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        &:hover {
+            transform: scale(1.03);
+            transition: all 0.4s;
+        }
+    }
+}

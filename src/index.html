@@ -74,7 +74,7 @@
                 <ul class="menu__list">
                     <li class="menu__link"><a href="#">ПРО МЕНЯ</a></li>
                     <li class="menu__link"><a href="#">МОЙ ОПЫТ</a></li>
-                    <li class="menu__link"><a href="#">МОИ НАВЫКИ</a></li>
+                    <li class="menu__link"><a href="#skills">МОИ НАВЫКИ</a></li>
                     <li class="menu__link"><a href="#">МОИ РАБОТЫ</a></li>
                     <li class="menu__link"><a href="#">ПРАЙС-ЛИСТ</a></li>
                     <li class="menu__link"><a href="#">КОНТАКТЫ</a></li>
@@ -105,7 +105,7 @@
         <div class="menu__over"></div>
     </div>
 <!--//////////////////////////////////////////////////////////////////////////////////-->
-    <section class="promo">
+    <section class="promo" id="up">
         <div class="hamburger">
             <span></span>
             <span class="long"></span>
@@ -292,7 +292,7 @@
 
     <!--///////////////////////////////////////////////////////////////////////////////////////////////-->
 
-    <section class="subjects">
+    <section class="subjects" id="skills">
         <div class="cont">
             <h2 class="title title_fz16 subjects__title">Навыки</h2>
             <div class="title title_fz36 subjects__subtitle">Что я использую в работе</div>
@@ -430,7 +430,40 @@
             </div>
         </div>
     </section>
+
+    <section class="myProjects">
+        <div class="cont">
+            <h2 class="title title_fz16 myProjects__title">Портфолио</h2>
+            <div class="title title_fz36 myProjects__subtitle">Мои работы</div>
+            <div class="yellowLine yellowLine_mt25"></div>
+
+            <div class="myProjects__portfolio">
+                <a href="#" class="myProjects__item">
+                    <img src="img/uber.jpg" alt="uber">
+                </a>
+                <a href="#" class="myProjects__item">
+                    <img src="img/xo.jpg" alt="xo">
+                </a>
+                <a href="/Clock" class="myProjects__item">
+                    <img src="img/clock.jpg" alt="clock">
+                </a>
+                <a href="/Змейка 2" class="myProjects__item" id="snake">
+                    <img src="img/plans.jpg" alt="plan">
+                </a>
+                <a href="#" class="myProjects__item">
+                    <img src="img/pulse.jpg" alt="pulse">
+                </a>
+                <a href="#" class="myProjects__item" id="mac">
+                    <img src="img/mac.jpg" alt="mac">
+                </a>
+            </div>
+        </div>
+    </section>
+    <a href="#up" class="pageup">
+        <img src="icons/arrow.png" alt="up">
+    </a>
     <!--//////////////////////////////////////////////////////////////////////////////////-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

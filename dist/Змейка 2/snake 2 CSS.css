@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-attachment: fixed;
+    background-color: darkolivegreen;
+    background-size: cover;
+}
+
+#score {
+    width: 632px;
+    height: 60px;
+    padding-top: 5px;
+    text-align: center;
+    border: 1px solid #333;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-image: url('https://c.wallhere.com/photos/c0/11/2048x1280_px_Simon_C_Page-547609.jpg!d');
+    background-size: cover;
+    font-size: 30px;
+    color: #fff;
+    font-family: cursive;
+}
+
+
+
+#canvas {
+    width: 632px;
+    height: 632px;
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #333;
+    border-radius: 10px;
+    background-image: url('https://c.wallhere.com/photos/c0/11/2048x1280_px_Simon_C_Page-547609.jpg!d');
+    background-size: cover;
+}
+
+#keyLeft, #keyUp, #keyRight, #keyDown {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background: darkblue;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 5px;
+    margin: 4px;
+}
+
+.first {
+    transform: translate(750px, 0px);
+}
