@@ -1,0 +1,80 @@
+.price {
+    padding-top: 60px;
+    &__title {
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        @include before_circle;
+        &:before {
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__wrapp {
+        padding: 60px 50px 0px 50px;
+        display: grid;
+        grid-template-columns: minmax(277px, auto) minmax(270px, auto);
+        grid-template-rows: repeat(3, minmax(44px, auto));
+        grid-auto-rows: minmax(44px, auto);
+        row-gap: 15px;
+        column-gap: 305px;
+    }
+    &__rubless {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+        color: #000000;
+    }
+    &__descr {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: #000000;
+        grid-column: 1 / 3;
+    }
+    &__item {
+        display: grid;
+        grid-template-columns: minmax(89px, auto) minmax(57px, auto);
+        grid-template-rows: 21px 18px;
+        justify-content: space-between;
+        align-content: space-between;
+        row-gap: 5px;
+        &-title {
+            font-style: normal;
+            position: relative;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+            color: #000000;
+            &:before {
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                border-radius: 100%;
+                background-color: $main-color;
+                left: -25px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}
+
+/*
+&__ratings {
+        margin-top: 120px;
+        display: grid;
+        grid-template: repeat(2, minmax(70px, auto)) / repeat(3, 350px);
+        column-gap: 45px;
+        row-gap: 35px;
+        &-item {
+            display: grid;
+            grid-template: minmax(21px, auto) 14px / 200px 35px;
+            justify-content: space-between;
+            align-content: space-between;
+        }
+*/
