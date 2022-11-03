@@ -544,21 +544,25 @@
                         Или оставьте ваши данные и я сама вам напишу:
                     </div>
 
-                    <form action="#" class="contacts__form">
+                    <form action="#" class="contacts__form" id="myForm">
                         <div class="contacts__input">
                             <input name="name" id="name" type="text" placeholder="Имя">
                             <label for="name">Ваше имя</label>
                         </div>
-                        <div id="email" name="name" class="contacts__input" placeholder="example@mail.ru">
-                            <input type="email">
+                        <div id="email" class="contacts__input">
+                            <input type="email" name="email"  placeholder="example@mail.ru">
                             <label for="email">Ваша почта</label>
                         </div>
                         <div class="contacts__textarea">
-                            <textarea name="text" id="text"></textarea>
+                            <textarea name="text" id="text" placeholder="Здраствуйте, я ознакомился с вашим портфолио и..."></textarea>
                             <label for="text">Ваше сообщение</label>
                         </div>
-                        <div>
+                        <div class="contacts__triggers">
                             <button class="contacts__btn btn">Отправить сообщение</button>
+                            <div class="contacts__policy">
+                                <input required name="accord" type="checkbox">
+                                <span>Я согласен(а) с <a href="/policy.html">политикой конфинедциальности</a></span>
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -570,6 +574,7 @@
     </a>
     <!--//////////////////////////////////////////////////////////////////////////////////-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

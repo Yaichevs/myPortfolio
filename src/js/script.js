@@ -39,5 +39,38 @@ $("a[href^='#']").click(function(){
     return false;
 });
 
+function validateForms(form) {
+    $(form).validate({
+        rules: {
+            name: {
+                required: true,
+                minlength: 2
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            accord: {
+                required: true
+            }
+        },
+        messages: {
+            name: {
+                required: "Пожалуйста, введите свое имя",
+                minlength: jQuery.validator.format("Введите {0} символа!")
+              },
+            email: {
+              required: "Пожалуйста, введите свою почту",
+              email: "Неправильно введен адрес почты"
+            },
+            accord: {
+                required: "Прочитайте политику конфендациальности",
+            },
+        }
+    });
+}
+
+validateForms('#myForm');
+
 
 
