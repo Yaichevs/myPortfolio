@@ -1,0 +1,22 @@
+@media (max-width: 1200px) {
+   
+}
+
+@media (max-width: 992px) {
+    
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 576px) {
+    .yellowLine {
+        &_mt4 {
+            margin-top: 15px;
+        }
+        &_mt25 {
+            margin: 15px auto 0 auto;
+        }
+    }
+}

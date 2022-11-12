@@ -10,7 +10,7 @@
 }
 
 .cont {
-    max-width: 1140px;
+    width: 1140px;
     margin: 0 auto;
 }
 
@@ -46,4 +46,5 @@
 @import 'blocks/media/hamburger-media';
 @import 'blocks/media/title-media';
 @import 'blocks/media/container-media';
+@import 'blocks/media/line-media';
 
