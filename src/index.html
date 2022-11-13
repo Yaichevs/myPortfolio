@@ -126,7 +126,17 @@
         <div class="cont">
             <div class="aboutMe__wrapp">
                 <div class="aboutMe__photo">
-                    <img src="img/photoForAboutMe.jpg" alt="photo" class="aboutMe__img">
+                    <!-- <img srcset="img/photoForAboutMe-min.jpg 300w,
+                                 img/photoForAboutMe.jpg 400w" 
+                        sizes="(max-width: 576px) 280px,
+                                (min-width: 577px) 400px"
+                    src="img/photoForAboutMe.jpg" alt="photo" class="aboutMe__img"><!--идет и видит: ага, у нас маленький экран, видит 280px...(ближе нам 300px, поэтому вставлю его
+                    , если было бы (max-width: 576px) 310px, то я бы взял 400px и подставил его, так как уменьшать я не могук)--> 
+                    <picture>
+                        <source media="(max-width: 576px)" srcset="img/photoForAboutMe-min.jpg">
+                        <source media="(min-width: 577px)" srcset="img/photoForAboutMe.jpg">
+                        <img src="img/photoForAboutMe.jpg" alt="photo">
+                    </picture>
                 </div>
                 <div class="aboutMe__descr">
                     <div class="title title_fz16 aboutMe__title">Про меня</div>
