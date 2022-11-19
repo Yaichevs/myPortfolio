@@ -1,14 +1,17 @@
 @media (max-width: 1200px) {
     .subjects {
         &__wrapp {
-            grid-template-columns: repeat(3,270px);
-            padding-left: 50px;
+            grid-template-columns: repeat(auto-fit, 270px);
+            justify-content: space-between;
         }
         &__wrapp2 {
-            padding-left: 40px;
-            grid-template-columns: repeat(2,350px);
-            column-gap: 150px;
-            row-gap: 40px;
+            grid-template-columns: repeat(auto-fit, 350px);
+            grid-auto-rows: minmax(70px, auto);
+            justify-content: space-between;
+            padding: 0 30px;
+        }
+        &__scaleline {
+            width: 100%;
         }
     }
 }
@@ -16,19 +19,39 @@
 @media (max-width: 992px) {
     .subjects {
         &__wrapp {
-            grid-template-columns: repeat(2,270px);
-            padding-left: 30px;
+            padding: 0 20px;
         }
         &__wrapp2 {
-            grid-template-columns: repeat(1,400px);
-            column-gap: 0px;
-            row-gap: 40px;
+            grid-template-columns: repeat(auto-fit, 320px);
+            justify-content: space-between;
+            padding: 0;
+            column-gap: 0;
+            margin-top: 30px;
+        }
+        &__scaleline {
+            width: 100%;
         }
     }
 }
 
 @media (max-width: 768px) {
-    
+    .subjects {
+        padding-top: 40px;
+        &__wrapp {
+            padding: 0;
+            justify-content: center;
+            gap: 20px;
+        }
+        &__wrapp2 {
+            grid-template-columns: repeat(auto-fit, 320px);
+            grid-auto-rows: minmax(70px, auto);
+            justify-content: center;
+            margin-top: 40px;
+        }
+        &__scaleline {
+            width: 100%;
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -39,18 +62,17 @@
         }
         &__wrapp {
             margin-top: 20px;
-            grid-template-columns: 320px;
+            grid-template-columns: repeat(auto-fit, 320px);
             padding-left: 15px;
         }
         &__item {
             width: 270px;
         }
         &__wrapp2 {
-            grid-template-columns: 320px;
-            padding-left: 0px;
+            grid-template-columns: repeat(auto-fit,300px);
         }
         &__scaleline {
-            width: 320px;
+            width: 100%;
         }
     }
 }
